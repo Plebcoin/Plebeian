@@ -38,7 +38,7 @@ static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 23129316 * COIN; //23 million coins max PoW
 static const int64_t COIN_YEAR_REWARD = 20 * CENT; // 20% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.20 * COIN;	// 20% Annual PoS Interest
-static const int MODIFIER_INTERVAL_SWITCH = 2880;
+static const int MODIFIER_INTERVAL_SWITCH = 5400;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
