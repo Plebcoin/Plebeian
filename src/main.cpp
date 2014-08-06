@@ -2493,9 +2493,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "Plebeian7/29";
+        const char* pszTimestamp = "Russian Ministry of Finance Drafts Bill Banning Bitcoin 08/6/2014";
         CTransaction txNew;
-        txNew.nTime = 1406686512;
+        txNew.nTime = 1407300450;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2505,7 +2505,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1406686512;
+        block.nTime    = 1407300450;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 3163711;
 		if(fTestNet)
