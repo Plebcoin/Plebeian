@@ -2538,9 +2538,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
-		if (true && block.GetHash() != hashGenesisBlock)
+		//if (true && block.GetHash() != hashGenesisBlock)
 		{
-            printf("Searching for genesis block...\n");
+          //  printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
             // creating a different genesis block:
             //uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
@@ -2575,11 +2575,12 @@ bool LoadBlockIndex(bool fAllowNew)
     }
 
     return true;
+	void PrintBlockTree()
 }
 
 
 
-void PrintBlockTree()
+
 {
     // pre-compute tree structure
     map<CBlockIndex*, vector<CBlockIndex*> > mapNext;
